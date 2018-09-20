@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .color {
+            /*background: rgb(243, 157, 45);*/
+            background-color: rgb(243, 157, 45) !important;
+        }
+        img {
+            margin: 20px 0;
+        }
+        .progress {
+            height: 25px;
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- 模态框头部 -->
+                    <!-- <div class="modal-header">
+                        <h4 class="modal-title">模态框头部</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div> -->
+
+                    <!-- 模态框主体 -->
+                    <div class="modal-body text-center">
+                        <h5>请稍等，小U正为您努力生成模型</h5>
+                        <img src="img/u.png">
+
+                        <div class="progress">
+                            <div class="progress-bar color text-dark progress-bar-striped progress-bar-animated" style="width:100%">大约需要30秒</div>
+                        </div>
+                    </div>
+
+                    <!-- 模态框底部 -->
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#myModal').modal('show');
+    </script>
+</body>
+</html>
