@@ -21,6 +21,9 @@
             width: 80%;
             margin: 0 auto;
         }
+        .modal-dialog {
+            
+        }
     </style>
 </head>
 <body>
@@ -39,10 +42,10 @@
                     <!-- 模态框主体 -->
                     <div class="modal-body text-center">
                         <h5>请稍等，小U正为您努力生成模型</h5>
-                        <img src="img/u.png">
+                        <img src="img/u.png" id="test">
 
                         <div class="progress">
-                            <div class="progress-bar color text-dark progress-bar-striped progress-bar-animated" style="width:100%">大约需要30秒</div>
+                            <div class="progress-bar color progress-bar-striped progress-bar-animated" style="width:100%">Loading...</div>
                         </div>
                     </div>
 
@@ -58,6 +61,10 @@
 
     <script type="text/javascript">
         $('#myModal').modal('show');
+        var modalHeight = $(window).height();
+        var height = $('#test').height();
+        var x = $('.modal-dialog').$element.width();
+        console.log(x);
     </script>
 </body>
 </html>
